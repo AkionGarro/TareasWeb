@@ -123,3 +123,109 @@ html {
 .languages__element {
   width: 15rem;
 }
+
+.experience {
+  text-align: center;
+  width: 80%;
+  margin: 5rem auto;
+}
+
+.experiences__types {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  margin: 4rem 0;
+}
+
+.exp__element {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  vertical-align: center;
+  width: 40rem;
+  background-color: #c2c0c0;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.education {
+  text-align: center;
+  width: 80%;
+  margin: 5rem auto;
+}
+
+.education__element {
+  text-align: center;
+  width: 40rem;
+  margin: 2rem auto;
+  background-color: #c2c0c0;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.portfolio {
+  text-align: center;
+  width: 80%;
+  margin: 5rem auto;
+}
+.portfolio__item {
+  background-color: #c2c0c0;
+  margin: 2rem auto;
+  border-radius: 2rem;
+  padding: 8rem;
+}
+
+.portfolio__img {
+  width: 80%;
+  border-radius: 2rem;
+}
+
+.contact {
+  text-align: center;
+  width: 80%;
+  margin: 5rem auto;
+}
+
+.contact__items {
+  display: flex;
+  gap: 2rem;
+  margin: 4rem 0;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 40rem;
+  margin: 0 auto;
+}
+
+.contact__label {
+  text-align: start;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.contact__input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #c2c0c0;
+  border-radius: 1rem;
+  resize: none;
+}
+
+.form__info {
+  text-align: left;
+  width: 100%;
+  height: 100%;
+}
+
+.info__items {
+  display: flex;
+
+  gap: 1rem;
+}
