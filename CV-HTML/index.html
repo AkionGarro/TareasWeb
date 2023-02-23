@@ -5,68 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV-AkionGarro</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="#SobreMi">Sobre mi</a>
-        <a href="#Servicios">Servicios</a>
-        <a href="#Habilidades">Habilidades</a>
-        <a href="#Experiencia">Experiencia</a>
-        <a href="#Educacion">Educación</a>
-        <a href="#Portafolio">Portafolio</a>
-        <a href="#Contacto">Contacto</a>
+    <header class="header__nav">
+      <nav class="navigation">
+        <a class="nav__item" href="#SobreMi">Sobre mi</a>
+        <a class="nav__item" href="#Servicios">Servicios</a>
+        <a class="nav__item" href="#Habilidades">Habilidades</a>
+        <a class="nav__item" href="#Experiencia">Experiencia</a>
+        <a class="nav__item" href="#Educacion">Educación</a>
+        <a class="nav__item" href="#Portafolio">Portafolio</a>
+        <a class="nav__item" href="#Contacto">Contacto</a>
       </nav>
-    </header>
-    <main>
-      <h1>Hola, soy Akion Garro</h1>
-      <p>Desarrollador de Software</p>
-      <a href="https://www.instagram.com/akion_garro/" target="_blank"
-        >Facebook</a
-      >
-      <a href="https://www.facebook.com/akion.gcampos/" target="_blank"
-        >Instagram</a
-      >
-      <a href="https://www.linkedin.com/in/akion-garro/" target="_blank"
-        >LinkedIn</a
-      >
-      <button>Contáctame</button>
-      <button>Descargar CV</button>
-    </main>
-
-    <section id="SobreMi">
+    
+    <div class="nav__info">
+      <img src="images/navigation/hello4.svg" alt="navigation">
       <div>
-        <h2>Un poco sobre mi</h2>
-        <p>
-          Actualmente estoy cursando el sexto semestre de la carrera de
-          Ingeniería en Computación en el Tecnológico de Costa Rica. Me apasiona
-          el mundo de la tecnología y en particular me he enfocado en áreas como
-          el diseño de software, bases de datos, patrones de diseño, estructuras
-          de datos y administración de proyectos.
-        </p>
+        <h1>Hola, soy Akion Garro</h1>
+        <p>Desarrollador de Software</p>
         <div>
-          <h3>Edad:</h3>
+          <a href="https://www.instagram.com/akion_garro/" target="_blank" title="facebook"
+          ><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+          </svg></a
+        >
+        <a href="https://www.facebook.com/akion.gcampos/" target="_blank" title="instagram"
+          ><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <rect x="4" y="4" width="16" height="16" rx="4" />
+            <circle cx="12" cy="12" r="3" />
+            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+          </svg></a
+        >
+        <a href="https://www.linkedin.com/in/akion-garro/" target="_blank" title="linkedin"
+          ><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <rect x="4" y="4" width="16" height="16" rx="2" />
+            <line x1="8" y1="11" x2="8" y2="16" />
+            <line x1="8" y1="8" x2="8" y2="8.01" />
+            <line x1="12" y1="16" x2="12" y2="11" />
+            <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+          </svg></a
+        >
+        </div>
+
+        <div>
+          <button class="btn btn__primary">Contáctame</button>
+          <button class="btn btn__secundary">Descargar CV</button>
+        </div>
+
+      </div>
+      
+    </div>
+    </header>
+ 
+
+    <section id="SobreMi" class="about">
+      <div class="about__info">
+        <div>
+          <h2>Un poco sobre mi</h2>
+          <p>
+            Actualmente estoy cursando el sexto semestre de la carrera de
+            Ingeniería en Computación en el Tecnológico de Costa Rica. Me apasiona
+            el mundo de la tecnología y en particular me he enfocado en áreas como
+            el diseño de software, bases de datos, patrones de diseño, estructuras
+            de datos y administración de proyectos.
+          </p>
+        </div>
+        
+        <div class="about__info__item">
+           <h3 class="about__info__title">Edad:</h3>
           <p>22</p>
         </div>
-        <div>
-          <h3>Correo:</h3>
+        <div class="about__info__item">
+           <h3 class="about__info__title">Correo:</h3>
           <p>carloscamp1008@gmail.com</p>
         </div>
 
-        <div>
-          <h3>Telefono:</h3>
+        <div class="about__info__item">
+           <h3 class="about__info__title">Telefono:</h3>
           <p>+506 8504-5830</p>
         </div>
-        <div>
-          <h3>Dirreción:</h3>
+        <div class="about__info__item">
+           <h3 class="about__info__title">Dirreción:</h3>
           <p>Alajuela, Costa Rica</p>
         </div>
-        <div>
-          <h3>Estado:</h3>
+        <div class="about__info__item">
+           <h3 class="about__info__title">Estado:</h3>
           <p>Disponible</p>
         </div>
       </div>
-      <img
+      <img class="about__profile"
         src="images/profile.jpg"
         alt="AkionProfile"
         width="400px"
@@ -74,14 +110,16 @@
       />
     </section>
 
-    <section id="Servicios">
+    <section id="Servicios" class="services">
       <h2>Mis Servicios</h2>
       <p>
         Ofrezco mis servicios para cualquier tipo de sitio web o aplicación.
+        <br>
         Puedo maximizar rápidamente los entregables oportunos para esquemas en
         tiempo real.
       </p>
-      <div>
+      <div class="services__types">
+      <div >
         <img src="images/services/graphic-design.svg" alt="">
         <h4>Diseño y Páginas Web</h3>
       </div>
@@ -97,81 +135,110 @@
         <img src="images/services/app-development.svg" alt="">
         <h4>Aplicaciones Móviles</h3>
       </div>
+    </div>
     </section>
 
-    <section id="Habilidades">
+    <section id="Habilidades" class="skills">
       <h2>Mis Habilidades</h2>
       <p>Durante mi carrera he tenido la oportunidad de trabajar en gran cantidad de proyectos, lo que me ha permitido desarrollar habilidades en múltiples áreas de la tecnología.</p>
+      <div class="skills__types">
       <div>
-        <div>
+        <div class="skills__types__element">
             <h4>Java</h4>
-            <div>Progress Bar</div>
+            <div class="w3-light-grey w3-tiny">
+              <div class="w3-container p__bar" style="width:80%">80%</div>
+            </div>
         </div>
-        <div>
+        <div  class="skills__types__element">
             <h4>Python</h4>
-            <div>Progress Bar</div>
+            <div class="w3-light-grey w3-tiny">
+              <div class="w3-container p__bar" style="width:80%">80%</div>
+            </div>
         </div>
-        <div>
+        <div  class="skills__types__element">
             <h4>Angular</h4>
-            <div>Progress Bar</div>
+            <div class="w3-light-grey w3-tiny">
+              <div class="w3-container p__bar" style="width:80%">80%</div>
+            </div>
         </div>
-        <div>
+        <div  class="skills__types__element">
             <h4>SQL Server</h4>
-            <div>Progress Bar</div>
+            <div class="w3-light-grey w3-tiny">
+              <div class="w3-container p__bar" style="width:80%">80%</div>
+            </div>
         </div>
-        <div>
+        <div  class="skills__types__element">
             <h4>TypeScript</h4>
-            <div>Progress Bar</div>
+            <div class="w3-light-grey w3-tiny">
+              <div class="w3-container p__bar" style="width:80%">80%</div>
+            </div>
         </div>
         
-
       </div>
 
       <div>
-        <div>
+        <div  class="skills__types__element">
             <h4>Flask</h4>
-            <div>Progress Bar</div>
+            <div class="w3-light-grey w3-tiny">
+              <div class="w3-container p__bar" style="width:80%">80%</div>
+            </div>
         </div>
-        <div>
+        <div  class="skills__types__element">
             <h4>HTML/CSS</h4>
-            <div>Progress Bar</div>
+            <div class="w3-light-grey w3-tiny">
+              <div class="w3-container p__bar" style="width:80%">80%</div>
+            </div>
         </div>
-        <div>
+        <div  class="skills__types__element">
             <h4>FireStore</h4>
-            <div>Progress Bar</div>
+            <div class="w3-light-grey w3-tiny">
+              <div class="w3-container p__bar" style="width:80%">80%</div>
+            </div>
         </div>
-        <div>
+        <div  class="skills__types__element">
             <h4>Jira</h4>
-            <div>Progress Bar</div>
+            <div class="w3-light-grey w3-tiny">
+              <div class="w3-container p__bar" style="width:80%">80%</div>
+            </div>
         </div>
-        <div>
+        <div  class="skills__types__element">
             <h4>Unity</h4>
-            <div>Progress Bar</div>
+            <div class="w3-light-grey w3-tiny">
+              <div class="w3-container p__bar" style="width:80%">80%</div>
+            </div>
         </div>
 
       </div>
+    </div>
     </section>
 
 
-    <section id="Idiomas">
+    <section id="Idiomas" class="languages" >
         <h2>Idiomas</h2>
+        <div class="languages__types">
+
         <div>
-          <div>
+          <div class="languages__element">
               <h4>Español</h4>
-              <div>Progress Bar</div>
+              <div class="w3-light-grey w3-tiny">
+                <div class="w3-container p__bar" style="width:80%">80%</div>
+              </div>
           </div>
         </div>
   
         <div>
-          <div>
+          <div class="languages__element">
               <h4>Inglés</h4>
-              <div>Progress Bar</div>
+              <div class="w3-light-grey w3-tiny">
+                <div class="w3-container p__bar" style="width:80%">80%</div>
+              </div>
           </div>
         </div>
+      </div>
       </section>
 
 
-    <section id="Experiencia">
+    <section id="Experiencia" class="experience">
       <h2>Mi Experiencia</h2>
       <div>
         <div>
@@ -324,7 +391,7 @@
             <input type="email" placeholder="Correo">
             <label for="">Mensaje</label>
             <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-            <button type="submit">Enviar</button>
+            <button class="btn" type="submit">Enviar</button>
         </form>
 
       </div>
