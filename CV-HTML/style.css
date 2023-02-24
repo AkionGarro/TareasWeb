@@ -187,10 +187,21 @@ html {
   margin: 5rem auto;
 }
 
+.contact__div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 40rem;
+  margin: 0 auto;
+}
+
 .contact__items {
   display: flex;
   gap: 2rem;
   margin: 4rem 0;
+  vertical-align: center;
 }
 
 .contact__form {
@@ -228,4 +239,17 @@ html {
   display: flex;
 
   gap: 1rem;
+}
+
+.footer {
+  background-color: #d6d6d6;
+  text-align: center;
+  padding: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#time {
+  margin: 0;
 }
